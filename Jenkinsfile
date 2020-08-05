@@ -10,7 +10,7 @@ pipeline {
     }
     stage('test') {
       steps {
-	
+	sh 'pip install --upgrade pip'	
 	echo"finesh"
 	sh 'python test.py'
       }   
