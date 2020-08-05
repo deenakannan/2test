@@ -4,12 +4,15 @@ pipeline {
     stage('build') {
       steps {
 		echo"starting"
-      }
+     		sh 'pip install flask'
+	}
 
     }
     stage('test') {
       steps {
+	
 	echo"finesh"
+	sh 'python test.py'
       }   
     }
   }
